@@ -1,7 +1,7 @@
 # simpleBlockChain
 
 
-#How to run it 
+*How to run it*
 
 import block
 my_block = block.Block('some data')
