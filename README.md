@@ -4,44 +4,20 @@
 ## How to run it
 
 ```python
-import block
-my_block = block.Block('some data')
-my_block
-Block<Hash: 4df705..., Nonce: None>
-my_block.mine()
-my_block
-Block<Hash: 00006a..., Nonce: 3763>
-import block
-import block-chain
+1) Import block , create a block object , hash it
+
+2) Import block-chain , create its object
+
+3) Add block objects to the block-chain object like so: 
+block1 = block.Block('block1')
+chain.add_block(block1)
+
+4) Update data :
+block1.update_data('mo money mo problems')
+
+5) If the chain breaks , use : chain.repair()
+
 ```
-
-```python
-
-chain = blockchain.Block-chain()
-```
-
-```python
-
-first = block.Block('first')
-second = block.Block('second')
-third = block.Block('third')
-
-chain.add_block(first)
-chain.add_block(second)
-chain.add_block(third)
-```
-
-
-```python
-first.update_data('broken chain')
-
-print(chain.broken)  # True
-
-chain.repair()
-
-print(chain.broken)  # False
-```
-
 
 ## Credits
 
