@@ -7,8 +7,8 @@ import block
 my_block = block.Block('some data')
 my_block
 Block<Hash: 4df705..., Nonce: None>
->>> my_block.mine()
->>> my_block
+my_block.mine()
+my_block
 Block<Hash: 00006a..., Nonce: 3763>
 import block
 import block-chain
