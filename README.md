@@ -1,8 +1,9 @@
 # simpleBlockChain
 
 
-*How to run it*
+## How to run it
 
+```python
 import block
 my_block = block.Block('some data')
 my_block
@@ -12,10 +13,14 @@ my_block
 Block<Hash: 00006a..., Nonce: 3763>
 import block
 import block-chain
+```
 
+```python
 
 chain = blockchain.Block-chain()
+```
 
+```python
 
 first = block.Block('first')
 second = block.Block('second')
@@ -24,7 +29,10 @@ third = block.Block('third')
 chain.add_block(first)
 chain.add_block(second)
 chain.add_block(third)
+```
 
+
+```python
 first.update_data('broken chain')
 
 print(chain.broken)  # True
@@ -32,3 +40,9 @@ print(chain.broken)  # True
 chain.repair()
 
 print(chain.broken)  # False
+```
+
+
+## Credits
+
+Implementaion of Anders Brownworth demo (https://anders.com/blockchain/)
